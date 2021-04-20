@@ -1,0 +1,63 @@
+*{ /* (reset css) cada navegador tem valor de margim e padding padrão, por isso é importante zerar essas regras antes de inciar a formatação */
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; /* limita o tamanho dos elementos, não deixando que os elementos "vazem a box" */
+}
+
+:root { /* é possível declarar variáveis. Aqui, se achou interessante declarar as cores como variáveis porque como são apenas essas cores que o site terá, fica mais fácil encontrá-las, caso seja necessário fazer alterações */
+   --vermelho:#e50914; 
+   --preto:#141414;
+}
+
+body {
+   background: var(--preto); /* o background faz ajustes no fundo da página */
+   font-family: 'Times New Roman', Times, serif; /* aqui se utilizou fontes da IDE, mas também é possívell utilizar fontes referenciadas externamente */
+   color: white; /* cabe ressaltar que a cor foi alterada aqui no body, porque a tag h3 e filha do body, ou seja, todos os elmentos que estiverem aqui dentro herdarão essas características */
+
+}
+
+header .container { /* sempre que se quiser acessar uma classe que foi criada, é preciso se referenciar nela com a tag htlm, nesse caso a "header", seguida de ponto (.), seguida da class */
+   display: flex; /* isso permite utilzar o recurso flex box, que alinha os elementos em tela */
+   flex-direction: row; /* esse é um elemento default, então, mesmo que não se declare, ele irá estar presente. Ele faz com que os caracteres fiquem juntos à linha superior da box */
+   align-items: center; /* alinha no eixo vertical da box, alterando a flex-direction row */
+   justify-content: space-between; /* alinha no eixo horizontal, cria um espaço entre a primeira tag filha do container, que é a h2, e a segunda tag, que é a nav*/
+}
+
+header .logo {
+   margin-left: 5px; /* coloca margem a esquerda da logo */
+   color: var(--vermelho);
+   font-family: 'Arial Black', Times;
+   font-size: 40px;
+}
+
+header nav a {
+   text-decoration: none; /* remove o riscado da fonte */
+   color: #aaa;
+   margin-right: 10px; /* coloca margem a direita dos elementos */
+}
+
+header nav a:hover { /* vai alterar a cor da fonte sempre que o mouse passar sobre ela */
+   color: #fff;
+}
+
+/*filme principal*/
+.filme-principal {
+   font-size: 16px;
+   background: url('/img/capa-house.jpg'); /* indicando que a imagem ficará como background da box */
+
+   height: 600px; /*tamanho da box*/
+   background-size:cover; /* tamanho da imagem, nesse caso, preenchendo toda a box */
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center; /* o justify-content sempre segue a direção do flex-direction, nesse caso, que é uma coluna, ele vai ficar no centro da coluna */
+   align-items: flex-start; /*indica, quando escolhida a função "column" que os elementos devem começar da esquerda*/
+}
+
+.filme-principal .descricao {
+   margin-bottom: 40px; /*vai inserir uma margem abaixo da descrição, afastando os botões*/
+}
+
+.titulo {
+   font-size: 40px;
+}
