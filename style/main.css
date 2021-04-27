@@ -11,7 +11,7 @@
 
 body {
    background: var(--preto); /* o background faz ajustes no fundo da página */
-   font-family: 'Times New Roman', Times, serif; /* aqui se utilizou fontes da IDE, mas também é possívell utilizar fontes referenciadas externamente */
+   font-family: 'Arial', Times, serif; /* aqui se utilizou fontes da IDE, mas também é possívell utilizar fontes referenciadas externamente */
    color: white; /* cabe ressaltar que a cor foi alterada aqui no body, porque a tag h3 e filha do body, ou seja, todos os elmentos que estiverem aqui dentro herdarão essas características */
 
 }
@@ -101,4 +101,8 @@ header nav a:hover { /* vai alterar a cor da fonte sempre que o mouse passar sob
    height: 100%;
    width: 100%;
    display: block;
+}
+
+.carrossel-filmes {
+   margin-top: 5px;
 }

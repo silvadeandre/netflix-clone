@@ -1,0 +1,17 @@
+@media screen and (max-width: 600px) {
+   header .container  {
+      display: flex;
+      flex-direction: column;
+   }/* aqui eu estou dizendo que se a tela tiver 600 pixels ou menos, o contairner principal irá seguir as orientações de flex container, adaptando os seus elementos em colunas. Isso deixa o layout da página mais bonito em dispositivos com telas menores*/
+
+   .botao {
+      margin-top: 5px;
+      width: 190px;
+   }
+}
+
+@media screen and (min-width: 1000px) {
+   .descricao {
+      width: 50%;
+   }
+}
