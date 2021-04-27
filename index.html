@@ -32,19 +32,19 @@
       <div class="filme-principal">
          <div class="container"> <!-- criado no estilo "wrapper, para que englobe vários elementos dentro. Assim, caso seja necessário trabalhar com os espaços entre esses elementos, basta alterar os valores dessa div"-->
             <h3 class="titulo">HOUSE OF CARDS</h3>
-            <p class="descricao">Um político inescrupuloso não mede esforços para conquistar o poder nos EUA neste drama vencedor do Emmy e do Globo de Ouro.</p>
+            <p class="descricao">Um político inescrupuloso não mede esforços para conquistar o poder nos EUA neste drama vencedor do Emmy e do Globo de Ouro.</p>       
+            <div class="botoes"> <!--toda div nova vem por padrão com   display 'block'. Assim, mesmo que essa div esteja dentro da div 'filme principal', ela não herdará as suas características de renderização-->
+               <button role="button" class="botao">
+                  <i class="fas fa-play"></i><!--essa tag foi adicionada usando os recursos do site fontawesome, criando o ícone de play-->
+                  ASSISTIR AGORA
+               </button>
+               <!--essa "role" vai informar ao navegador de qualquer dispositivo que a função do button é ser um button, independente do local onde ele for renderizado-->
+               <button role="button" class="botao">
+                  <i class="fas fa-info-circle"></i> 
+                  MAIS INFORMAÇÕES
+               </button>
+            </div>   
          </div>
-         <div class="botoes"> <!--toda div nova vem por padrão com display 'block'. Assim, mesmo que essa div esteja dentro da div 'filme principal', ela não herdará as suas características de renderização-->
-            <button role="button" class="botao">
-               <i class="fas fa-play"></i><!--essa tag foi adicionada usando os recursos do site fontawesome, criando o ícone de play-->
-               ASSISTIR AGORA
-            </button>
-            <!--essa "role" vai informar ao navegador de qualquer dispositivo que a função do button é ser um button, independente do local onde ele for renderizado-->
-            <button role="button" class="botao">
-               <i class="fas fa-info-circle"></i> 
-               MAIS INFORMAÇÕES
-            </button>
-         </div>   
       </div>
    </main>
 

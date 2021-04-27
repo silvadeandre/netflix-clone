@@ -70,11 +70,9 @@ header nav a:hover { /* vai alterar a cor da fonte sempre que o mouse passar sob
    background-color: rgba(0,0,0,.50);
    border: none;
    color: white;
-   
-   padding: 15px;
+   padding: 15px 20px;
    /* a padding cuida do espaço interno do elemento. A leitura dos valores se dá no sentido horário, ou seja, se colocar 4 valores o primeiro será da parte superior, o segundo da lateral direita, o teirceiro da inferior e o quarto da esquerda. Se colocar apenas 2 valores, o primeiro será da parte superior e inferior e o segundo das laterais direita e esquerda. Se passar apenas um valor ele será dos quatro lados*/
-   margin-right: 15px;
-   font-size: 12px;
+   margin-right: 15px; /*afastando um botão do outro*/
    cursor: pointer;/*muda o cursor para a maozinha quando passa sobre o botão*/
    transition: .3s ease all;/*trabalha com a transição entre uma animação e outra, para que o botão não mude de cor bruscamente*/
 }
