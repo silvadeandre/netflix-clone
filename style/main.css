@@ -43,9 +43,10 @@ header nav a:hover { /* vai alterar a cor da fonte sempre que o mouse passar sob
 /*filme principal*/
 .filme-principal {
    font-size: 16px;
-   background: url('/img/capa-house.jpg'); /* indicando que a imagem ficará como background da box */
+   background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/img/capa-house.jpg'); 
+   /* indicando que a imagem ficará como background da box, porém o linear gradient rgba (cor de red, green, black e alfa) está colocando uma película com leve escurecimento da imagem para melhorar o contraste da descrição do filme que está em branco */
 
-   height: 600px; /*tamanho da box*/
+   height: 500px; /*tamanho da box*/
    background-size:cover; /* tamanho da imagem, nesse caso, preenchendo toda a box */
 
    display: flex;
@@ -55,9 +56,49 @@ header nav a:hover { /* vai alterar a cor da fonte sempre que o mouse passar sob
 }
 
 .filme-principal .descricao {
+   margin-top: 10px; /*está inserindo uma margem acima da descrição, afastanado do título*/
    margin-bottom: 40px; /*vai inserir uma margem abaixo da descrição, afastando os botões*/
 }
 
 .titulo {
+   margin-top: 15%;
    font-size: 40px;
+   font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao {
+   background-color: rgba(0,0,0,.50);
+   border: none;
+   color: white;
+   
+   padding: 15px;
+   /* a padding cuida do espaço interno do elemento. A leitura dos valores se dá no sentido horário, ou seja, se colocar 4 valores o primeiro será da parte superior, o segundo da lateral direita, o teirceiro da inferior e o quarto da esquerda. Se colocar apenas 2 valores, o primeiro será da parte superior e inferior e o segundo das laterais direita e esquerda. Se passar apenas um valor ele será dos quatro lados*/
+   margin-right: 15px;
+   font-size: 12px;
+   cursor: pointer;/*muda o cursor para a maozinha quando passa sobre o botão*/
+   transition: .3s ease all;/*trabalha com a transição entre uma animação e outra, para que o botão não mude de cor bruscamente*/
+}
+
+.botao:hover {
+   background-color: white;
+   color: black;
+   /*está criando um efeito que muda as cores do botão ao passar o mouse sobre eles*/
+}
+
+.botao i {
+   margin-right: 7px;/*criando margem entre a tag i que é do ícone de play e info no botão e o texto deles*/
+}
+
+.container {
+   margin-left: 15px;
+}
+
+.filme-principal .container {
+   width:70%; /*está dizendo qual o espaço que o esse container vai ocupar na tela quando ela for diminuída*/
+}
+
+.box-filme {
+   height: 100%;
+   width: 100%;
+   display: block;
 }
