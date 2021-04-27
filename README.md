@@ -1,6 +1,6 @@
-#Projeto Netflix :vhs:
+Projeto Netflix :vhs:
 
-##Recriando a interface do NETFLIX  utilizando HTML5, CSS3 e JavaScript
+Recriando a interface do NETFLIX  utilizando HTML5, CSS3 e JavaScript
 
 Além disso, esse projeto também explorou:
 
